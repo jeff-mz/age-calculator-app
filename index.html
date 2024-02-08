@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/mobile.css" />
+    <script defer src="./app.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+
+  <body>
+    <main id="main">
+      <section id="app-header">
+        <div class="box">
+          <label for="birth-day" class="input-label">day</label>
+          <input
+            class="input"
+            type="number"
+            name="day"
+            id="birth-day"
+            required
+            placeholder="DD"
+          />
+          <small class="err-msg"></small>
+        </div>
+        <div class="box">
+          <label for="birth-month" class="input-label">month</label>
+          <input
+            class="input"
+            type="number"
+            name="month"
+            id="birth-month"
+            required
+            placeholder="MM"
+          />
+          <small class="err-msg"></small>
+        </div>
+        <div class="box">
+          <label for="birth-year" class="input-label">year</label>
+          <input
+            class="input"
+            type="number"
+            name="year"
+            id="birth-year"
+            required
+            placeholder="YYYY"
+          />
+          <small class="err-msg"></small>
+        </div>
+      </section>
+
+      <section id="separator">
+        <div class="line"></div>
+        <div class="circle">
+          <img src="./images/icon-arrow.svg" alt="arrow down icon " />
+        </div>
+      </section>
+
+      <section id="result">
+        <div>
+          <p class="age age-years">--</p>
+          <span class="text-ages">years</span>
+        </div>
+        <div>
+          <p class="age age-months">--</p>
+          <span class="text-ages">months</span>
+        </div>
+        <div>
+          <p class="age age-days">--</p>
+          <span class="text-ages">days</span>
+        </div>
+      </section>
+    </main>
+    <div class="copy-right">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/jeff-dev0"
+        >Jafar Mirzapoor</a
+      >.
+    </div>
+  </body>
+</html>
